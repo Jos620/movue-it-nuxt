@@ -11,7 +11,7 @@
 import Vue from "vue";
 import { mapState } from "vuex";
 export default Vue.extend({
-	name: "Completed Challenges",
+	name: "CompletedChallenges",
 	computed: mapState("Challenges", ["completedChallenges"])
 });
 </script>
