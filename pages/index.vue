@@ -4,7 +4,7 @@
 	>
 		<div class="flex flex-col w-full lg:w-1/2">
 			<Profile />
-			<!-- Completed Challenges -->
+			<CompletedChallenges />
 		</div>
 	</section>
 </template>
@@ -13,6 +13,7 @@
 import Vue from "vue";
 
 import Profile from "~/components/molecules/Profile.vue";
+import CompletedChallenges from "~/components/atoms/CompletedChallenges.vue";
 
 interface Head {
 	title: string;
@@ -24,7 +25,8 @@ export default Vue.extend({
 	}),
 
 	components: {
-		Profile
+		Profile,
+		CompletedChallenges
 	}
 });
 </script>
